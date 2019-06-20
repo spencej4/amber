@@ -1,7 +1,9 @@
 .testemonials{
     width:100%;
-    height: 600px;
-    padding: 0 15%;;
+    height: 560px;
+    padding: 0 10%;
+    margin-top: 80px;
+    /* margin-bottom: 20px; */
     clear: both;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,6 +12,10 @@
  
 .title {
     text-align: center;
+}
+
+.testemonials .title {
+    margin-bottom: 50px;
 }
 
 .pre-title-text {
@@ -41,11 +47,16 @@
 }
 
 .testimonial-item {
-    width: 45%;
+    width: 43%;
     height: auto;
     margin-top: 60px;
     display: inline-block;
 }
+
+.testimonial-item:nth-of-type(1) {
+    margin-top: 46px;
+}
+
 .words-of-kindness {
     font-size: 12px;
     font-family: 'Playfair Display', serif;
@@ -70,7 +81,8 @@
 
 .right {
     float: right;
-    padding-left: 2%;
+    /* padding-left: 2%; */
+    margin-left: 3%;
 }
 
   /* ---------------------------------------MOBILE--------------------------------------- */
