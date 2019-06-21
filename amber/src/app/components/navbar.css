@@ -162,6 +162,10 @@
     display: none;
   }
 
+  .nav {
+    right: 25px;
+  }
+
   #main_navbar {
     transition: transform 600ms;
     transition-timing-function: cubic-bezier(0,1.0,.82,1.0);

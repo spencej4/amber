@@ -51,30 +51,37 @@
 /* ---------------------------------------MOBILE--------------------------------------- */
 @media (min-width: 320px) and (max-width: 734px) {
     #about {
-        /* height: 100%; */
+        margin-top: 54px;
     }
-    .about-container {
-        padding: 10% 3% ;
+
+    #about .title {
+        margin-bottom: 0;
+    }
+
+    #about .title-text {
+        font-size: 30px;
+    }
+
+    #about .title-sub-title {
+        width: 85%;
+        margin: 20px auto 0 auto;
+        font-size: 10px;
+        font-family: 'Playfair Display', serif;
+        color: rgb(155, 155, 155);
+        line-height: 18px;
         text-align: center;
+        line-height: 18px;
     }
 
-   .spence {
-       width: 99%;
-       height: auto;
-       float: none;
-       margin-bottom: 5%;
-   } 
-
-   .about-text {
-    width: 100%;
-    padding-bottom: 15%;
-    display: block;
-    /* clear: both; */
-    text-align: left;
-   }
-
-   .link-inline {
-    margin-right: 7%;
-    display: inline-block;
+    #about .hero-image {
+        height: 301px;
+        margin: 50px 0 0 0 ;;
+       
     }
+
+    .services-item:nth-last-of-type(2) {
+        height: 254px;
+    }
+  
+
 }

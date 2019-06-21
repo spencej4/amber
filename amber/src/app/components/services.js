@@ -14,6 +14,7 @@ class Services extends React.Component{
         </div>
         <div className='services-item'>
             <div className='services-image left' id='image-1'></div>
+            <div className='services-image right' id='image-2-pseudo'></div>
             <div className='services-text bump-right'>
               <p className='services-text-title'>
                 Methodolgy

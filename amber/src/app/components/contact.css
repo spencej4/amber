@@ -178,7 +178,7 @@
 
 /* ---------------------------------------MOBILE--------------------------------------- */
 @media (min-width: 320px) and (max-width: 734px) {
-  #about {
+  #contact {
     height: 100%;
     position: relative;
   }
