@@ -93,15 +93,13 @@ class Contact extends React.Component{
                 </div>
                 <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "sender_name")} value={form.sender_name} placeholder="Your name" type="email"/></div>
                 <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "email_address")} value={form.email_address} placeholder="Email Address" type="text"/></div>
-                <div className="area"><textarea style={{border: error}} onChange={(e)=>this.handleChange(e, "baby_age")} value={form.baby_age} placeholder="Baby Age or Ages" type="text"/></div>
+                <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "baby_age")} value={form.baby_age} placeholder="Baby Age or Ages" type="text"/></div>
                 <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "neighborhood")} value={form.neighborhood} placeholder="Neighborhood you live in" type="text"/></div>
                 <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "days")} value={form.days} placeholder="Days you need care" type="text"/></div>
                 <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "how_often")} value={form.how_often} placeholder="How often" type="text"/></div>
                 <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "referred_by")} value={form.referred_by} placeholder="Referred by" type="text"/></div>
                 <div className="area"><input style={{border: error}} onChange={(e)=>this.handleChange(e, "note")} value={form.note} placeholder="Note" type="text"/></div>
-
-
-                <button className="save" onClick={this.handleSend}> <i className="fa fa-paper-plane" aria-hidden="true"></i> SEND</button>
+                <button className="save" onClick={this.handleSend}> <i className="fa fa-paper-plane" aria-hidden="true"></i> Submit form -></button>
               </div>
             ) : (
               <div className='thank-you-message'>
