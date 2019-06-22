@@ -1,0 +1,124 @@
+.testemonials{
+    width:100%;
+    height: 560px;
+    padding: 0 10%;
+    margin-top: 80px;
+    clear: both;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+ 
+.title {
+    text-align: center;
+}
+
+.testemonials .title {
+    margin-bottom: 50px;
+}
+
+.pre-title-text {
+    margin-bottom: -7px;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    color: rgb(184, 207 , 161);
+    text-transform: uppercase;
+}
+
+.title-text {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(74, 74 , 74);
+}
+
+.testimonials-body-row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-body-row2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-item {
+    width: 43%;
+    height: auto;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+.testimonial-item:nth-of-type(1) {
+    margin-top: 46px;
+}
+
+.words-of-kindness {
+    font-size: 12px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(155, 155, 155);
+    line-height: 18px;
+    text-align: center;
+}
+
+.author {
+    margin-top: 23px;
+    font-size: 10px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(155, 155, 155);
+    line-height: 12px;
+    text-align: center;
+}
+
+.left {
+    float: left;
+    padding-right: 2%;
+}
+
+.right {
+    float: right;
+    /* padding-left: 2%; */
+    margin-left: 3%;
+}
+
+  /* ---------------------------------------MOBILE--------------------------------------- */
+  @media (min-width: 320px) and (max-width: 734px) {
+    #testimonials .title-text {
+        padding: 0 7%;
+        font-size: 30px;
+    }
+
+    .testemonials {
+        height: 839px;
+    }
+
+    .testemonials .title {
+        margin-bottom: 27px;
+    }
+
+    .testimonial-item {
+        width: 82vw;
+        padding-bottom: 30px;
+        display: block;
+        clear: both;
+    }
+
+    .left {
+        float: none;
+        /* padding: 0; */
+        margin: 0;
+    }
+
+    .right {
+        float: none;
+        /* padding: 0; */
+        margin: 0;
+    }
+
+    .testimonials-body-row1 {
+        display: inherit;
+    }
+  }
