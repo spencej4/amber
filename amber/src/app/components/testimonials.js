@@ -1,6 +1,5 @@
 import React from 'react'
 import './testimonials.css'
-import celestial_battles from '../img/celestial-battles.JPG';
 
 class Testimonials extends React.Component{
   render(){
