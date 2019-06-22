@@ -40,7 +40,7 @@
   width:100%;
   margin:auto;
   margin-top:0;
-  /* position: absolute; */
+  background-color: rgb(242, 242, 242);
 }
 
 .con-body h4{
@@ -199,14 +199,21 @@
   }
 
   .form {
-    padding: 10% 10%;
+    padding: 1% 10% 10% 10%;
+  }
+
+  .fa-paper-plane {
+    box-shadow: none;
+    /* border: none;
+    background: none; */
   }
 
   .save {
     margin: 50px 5% 150px 49%;
-    background: transparent;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
+    border: none;
+    background: none;
   }
 
   .thank-you-message {
