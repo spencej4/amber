@@ -65,7 +65,7 @@
 }
 
 .author {
-    margin-top: 18px;
+    margin-top: 23px;
     font-size: 10px;
     font-family: 'Playfair Display', serif;
     color: rgb(155, 155, 155);
@@ -92,7 +92,7 @@
     }
 
     .testemonials {
-        height: 830px;
+        height: 839px;
     }
 
     .testemonials .title {
