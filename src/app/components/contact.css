@@ -12,8 +12,8 @@
   z-index: 5;
 }
 
-.title {
-  margin-top:  60px;
+#contact .title {
+  margin-top: 60px;
 }
 
 #contact .title-sub-title {
@@ -181,6 +181,7 @@
 @media (min-width: 320px) and (max-width: 734px) {
   #contact {
     height: 100%;
+    padding-top: 0;
     position: relative;
   }
 
@@ -191,7 +192,7 @@
   #contact .title-sub-title {
     width: 100%;
     margin: 9px auto 0 auto;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Playfair Display', serif;
     color: rgb(155, 155, 155);
     line-height: 18px;

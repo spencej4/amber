@@ -51,7 +51,10 @@
 /* ---------------------------------------MOBILE--------------------------------------- */
 @media (min-width: 320px) and (max-width: 734px) {
     #about {
-        margin-top: 54px;
+        /* margin-top: 54px; */
+        margin-top: 0;
+        padding-top: 60px;
+
     }
 
     #about .title {

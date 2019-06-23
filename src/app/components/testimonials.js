@@ -4,7 +4,7 @@ import './testimonials.css'
 class Testimonials extends React.Component{
   render(){
     return(
-      <div id="testimonials" className="testemonials">
+      <div id="testimonials" className="testimonials">
           <div className='title'>
             <p className='pre-title-text'>Testimonials</p>
             <p className='title-text'>Testimonials</p>

@@ -1,4 +1,4 @@
-.testemonials{
+.testimonials{
     width:100%;
     height: 560px;
     padding: 0 10%;
@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.testemonials .title {
+.testimonials .title {
     margin-bottom: 50px;
 }
 
@@ -91,11 +91,14 @@
         font-size: 30px;
     }
 
-    .testemonials {
+    .testimonials {
         height: 839px;
+        /* margin-bottom: 60px; */
+        margin-top: 0;
+        padding-top: 60px;
     }
 
-    .testemonials .title {
+    .testimonials .title {
         margin-bottom: 27px;
     }
 
