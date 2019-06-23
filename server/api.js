@@ -23,9 +23,15 @@ router.post('/mail', cors(), (req, res, next) =>{
   let HelperOptions = {
     from: '"Spencer Jack <spencerjack.sj@gmail.com',
     to: 'spencerjack.sj@gmail.com',
-    subject: req.body.subject ,// subject line
-    text: req.body.text + req.body.from, // plain text body
-    html: `<p>${req.body.text}</p><h4>from: ${req.body.from}</h4>` // html body
+    sender_name: req.body.sender_name ,
+    email_address: req.body.email_address,
+    baby_age: req.body.baby_age,
+    neighborhood: req.body.neighborhood,
+    days: req.body.days,
+    how_often: req.body.how_often,
+    referred_by: req.body.referred_by,
+    note: req.body.note
+    // html: `<p>${req.body.text}</p><h4>from: ${req.body.from}</h4>` 
   }
 
   transporter.sendMail(HelperOptions, (error, info) => {
