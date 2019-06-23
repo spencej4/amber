@@ -1,10 +1,3 @@
-
-// export const queryFrom = (from) =>{
-//   return {
-//     type:"FROM",
-//     from
-//   }
-// }
 export const querySenderName = (sender_name) =>{
   return {
     type:"FROM",
@@ -23,16 +16,16 @@ export const queryBabyAge = (baby_age) =>{
     baby_age
   }
 }
-export const queryNeighborhood = (days) =>{
-  return {
-    type:"DAYS",
-    days
-  }
-}
-export const queryDays = (neighborhood) =>{
+export const queryNeighborhood = (neighborhood) =>{
   return {
     type:"NEIGHBORHOOD",
     neighborhood
+  }
+}
+export const queryDays = (days) =>{
+  return {
+    type:"DAYS",
+    days
   }
 }
 export const queryHowOften = (how_often) =>{
@@ -53,7 +46,6 @@ export const queryNote = (note) =>{
     note
   }
 }
-
 export const queryReset = () =>{
   return{
     type:"RESET"
