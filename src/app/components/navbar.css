@@ -101,7 +101,7 @@
 .side_nav_menu {
   width: 100vw;
   height: 100%;
-  padding-top: 220px;
+  padding-top: 190px;
   padding-left: 0px;
   z-index: 15;
   overflow: hidden;
@@ -162,7 +162,7 @@
   }
 
   .nav {
-    margin-right: 46px;
+    /* margin-right: 46px; */
     /* right: 25px; */
   }
 
@@ -179,6 +179,7 @@
 
   
   .hamburger_click_me {
+    right: 44px;
     display: block;
     z-index: 18;
   }
