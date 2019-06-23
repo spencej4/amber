@@ -74,7 +74,8 @@
     }
 
     #about .hero-image {
-        height: 301px;
+        width: 100vw;
+        height: 254px;
         margin: 50px 0 0 0 ;;
        
     }
