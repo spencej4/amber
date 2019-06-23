@@ -1,55 +1,55 @@
 
-export const queryFrom = (from) =>{
-  return {
-    type:"FROM",
-    from
-  }
-}
+// export const queryFrom = (from) =>{
+//   return {
+//     type:"FROM",
+//     from
+//   }
+// }
 export const querySenderName = (sender_name) =>{
   return {
-    type:"SUBJECT",
+    type:"FROM",
     sender_name
   }
 }
 export const queryEmailAddress = (email_address) =>{
   return {
-    type:"TEXT",
+    type:"SUBJECT",
     email_address
   }
 }
 export const queryBabyAge = (baby_age) =>{
   return {
-    type:"TEXT",
+    type:"BABY_AGE",
     baby_age
   }
 }
 export const queryNeighborhood = (days) =>{
   return {
-    type:"TEXT",
+    type:"DAYS",
     days
   }
 }
 export const queryDays = (neighborhood) =>{
   return {
-    type:"TEXT",
+    type:"NEIGHBORHOOD",
     neighborhood
   }
 }
 export const queryHowOften = (how_often) =>{
   return {
-    type:"TEXT",
+    type:"HOW_OFTEN",
     how_often
   }
 }
 export const queryReferredBy = (referred_by) =>{
   return {
-    type:"TEXT",
+    type:"REFERRED_BY",
     referred_by
   }
 }
 export const queryNote = (note) =>{
   return {
-    type:"TEXT",
+    type:"NOTE",
     note
   }
 }
