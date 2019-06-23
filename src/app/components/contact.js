@@ -78,7 +78,7 @@ class Contact extends React.Component{
     let form = this.props.form;
     let error = this.props.state.error? '3px solid rgb(159, 0, 43)': "none"
     return(
-      <div id="contact" className=" Contact">
+      <div id="contact" className="Contact">
         <div className="con-body">
             {this.state.displayForm ? (
               <div className="form">

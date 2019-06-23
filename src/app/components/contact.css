@@ -3,7 +3,6 @@
 #contact{
   width:100%;
   height:98%;
-  padding-top: 60px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -13,7 +12,7 @@
 }
 
 #contact .title {
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 #contact .title-sub-title {
@@ -181,8 +180,13 @@
 @media (min-width: 320px) and (max-width: 734px) {
   #contact {
     height: 100%;
-    padding-top: 0;
+    /* padding-top: 0; */
+    /* padding-top: 60px; */
     position: relative;
+  }
+
+  #contact .title {
+    margin-top: 60px;
   }
 
   #contact .title-text {
