@@ -1,57 +1,68 @@
 
 const stateInit = {
-  from:"",
-  subject: "",
-  text:"",
+  sender_name: "",
+  email_address: "",
+  baby_age: "",
+  days: "",
+  neighborhood: "",
+  how_often: "", 
+  referred_by: "",
+  note: "",
 }
 const form = (state = stateInit, action) => {
   switch (action.type) {
     case 'FROM':
+    // console.log(action.sender_name);
       return {
         ...state,
-        from:action.sender_name
+        sender_name: action.sender_name
       }
       case 'SUBJECT':
       return {
         ...state,
-        subject:action.email_address
+        email_address: action.email_address
       }
       case 'BABY_AGE':
       return {
         ...state,
-        text:action.baby_age
+        baby_age: action.baby_age
       }
       case 'DAYS':
       return {
         ...state,
-        text:action.days
+        days: action.days
       }
       case 'NEIGHBORHOOD':
       return {
         ...state,
-        text:action.neighborhood
+        neighborhood: action.neighborhood
       }
       case 'HOW_OFTEN':
       return {
         ...state,
-        text:action.how_often
+        how_often: action.how_often
       }
       case 'REFERRED_BY':
       return {
         ...state,
-        text:action.referred_by
+        referred_by: action.referred_by
       }
       case 'NOTE':
       return {
         ...state,
-        text:action.note
+        note: action.note
       }
       case 'RESET':
       return{
         ...state,
-        from:"",
-        subject: "",
-        text:"",
+        sender_name: "",
+        email_address: "",
+        baby_age: "",
+        days: "",
+        neighborhood: "",
+        how_often: "", 
+        referred_by: "",
+        note: "",
       }
       default:
       return state

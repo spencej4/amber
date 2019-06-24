@@ -6,6 +6,8 @@ const config = require('./config.js');
 const cors = require('cors')
 
 router.post('/mail', cors(), (req, res, next) =>{
+  console.log('Request Body: ', req.body);
+
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     secure: false, 
@@ -23,16 +25,19 @@ router.post('/mail', cors(), (req, res, next) =>{
   let HelperOptions = {
     from: '"Spencer Jack <spencerjack.sj@gmail.com',
     to: 'spencerjack.sj@gmail.com',
-    sender_name: req.body.sender_name ,
-    email_address: req.body.email_address,
-    baby_age: req.body.baby_age,
-    neighborhood: req.body.neighborhood,
-    days: req.body.days,
-    how_often: req.body.how_often,
-    referred_by: req.body.referred_by,
-    note: req.body.note
-    // html: `<p>${req.body.text}</p><h4>from: ${req.body.from}</h4>` 
+    subject: 'New Nanny Opportunity!',
+    html: `<body style="line-height: 2px">
+           <h4 style="display:inline-block">Sender Name: </h4><p style="display:inline-block; margin-left: 5px">${req.body.sender_name}</p> <br>
+           <h4 style="display:inline-block">Email Address: </h4><p style="display:inline-block; margin-left: 5px">${req.body.email_address}</p> <br>
+           <h4 style="display:inline-block">Baby's Age (Ages): </h4><p style="display:inline-block; margin-left: 5px">${req.body.baby_age}</p> <br>
+           <h4 style="display:inline-block">Neighborhood: </h4><p style="display:inline-block; margin-left: 5px">${req.body.neighborhood}</p> <br>
+           <h4 style="display:inline-block">Days Needed: </h4><p style="display:inline-block; margin-left: 5px">${req.body.days}</p> <br>
+           <h4 style="display:inline-block">How Often: </h4><p style="display:inline-block; margin-left: 5px">${req.body.how_often}</p> <br>
+           <h4 style="display:inline-block">Referred By: </h4><p style="display:inline-block; margin-left: 5px">${req.body.referred_by}</p> <br>
+           <h4 style="display:inline-block">Note: </h4><p style="display:inline-block; margin-left: 5px">${req.body.note}</p>
+           </body>`           
   }
+
 
   transporter.sendMail(HelperOptions, (error, info) => {
     if (error) {
@@ -40,6 +45,7 @@ router.post('/mail', cors(), (req, res, next) =>{
     }
     console.log("The message was sent!");
     console.log(info);
+    console.log('Helper Options:',HelperOptions)
   })
 
   res.json({msg: res.body});

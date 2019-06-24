@@ -41,14 +41,15 @@ class Contact extends React.Component{
   }
 
   handleSend = () => {
+    console.log(this.props.form);
     // basic form validation
     if(this.props.form.sender_name === "" || this.props.form.email_address === "" || this.props.form.baby_age === "" || this.props.form.neighborhood === "" || this.props.form.days === "" 
-      || this.props.form.how_often === "" || this.props.form.referred_by === ''){
+      || this.props.form.how_often === "" || this.props.form.referred_by === '') {
       this.props.dispatch(query.error(true))
     }else{
       let form = this.props.form
       console.log("sending");
-      
+
       fetch('/api/mail',{
         method: 'POST',
         mode: "cors",
@@ -69,20 +70,19 @@ class Contact extends React.Component{
       }).then(function(){
         this.setState({ displayForm: false });
       }.bind(this));
-      }
+    }
   }
 
   
 
   render(){
     let form = this.props.form;
-    let error = this.props.state.error? '3px solid rgb(159, 0, 43)': "none"
+    let error = this.props.state.error? '1px solid rgb(159, 0, 43)': "none"
     return(
       <div id="contact" className="Contact">
         <div className="con-body">
             {this.state.displayForm ? (
               <div className="form">
-                {/* <div className='form-title'>Let's Get in Touch!</div> */}
                 <div className='title'>
                     <p className='pre-title-text'>Contact</p>
                     <p className='title-text'>Contact Amber</p>

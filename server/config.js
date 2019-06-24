@@ -1,5 +1,5 @@
 let config = {
-    password: "hjkwgwzdnpsajdnu"
+    password: "vsligucjplecztpb"
 }
 
 module.exports = config;
