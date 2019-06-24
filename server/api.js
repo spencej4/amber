@@ -24,7 +24,8 @@ router.post('/mail', cors(), (req, res, next) =>{
 
   let HelperOptions = {
     from: '"Spencer Jack <spencerjack.sj@gmail.com',
-    to: 'spencerjack.sj@gmail.com',
+    // to: 'spencerjack.sj@gmail.com',
+    to: 'evalikesdesign@gmail.com',
     subject: 'New Nanny Opportunity!',
     html: `<body style="line-height: 2px">
            <h4 style="display:inline-block">Sender Name: </h4><p style="display:inline-block; margin-left: 5px">${req.body.sender_name}</p> <br>
